@@ -25,7 +25,7 @@ on:
       magisk_apk:
         description: "Magisk version"
         required: true
-        default: "26.1"
+        default: "26.2"
         type: choice
         options:
         - 24.1
@@ -33,6 +33,13 @@ on:
         - 24.3
         - 25.2
         - 26.1
+        - 26.2
+        - 27.0
+        - 28.1
+        - 29.0
+        - 30.0
+        - 30.2
+        - 30.6
         - canary
         - delta
       gapps_variant:
@@ -232,6 +239,20 @@ jobs:
               magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v25.2/Magisk-v25.2.apk"
           if magisk_apk == "26.1":
               magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v26.1/Magisk-v26.1.apk"
+          if magisk_apk == "26.2":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v26.2/Magisk-v26.2.apk"
+          if magisk_apk == "27.0":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v27.0/Magisk-v27.0.apk"
+          if magisk_apk == "28.1":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v28.1/Magisk-v28.1.apk"
+          if magisk_apk == "29.0":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v29.0/Magisk-v29.0.apk"
+          if magisk_apk == "30.0":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v30.0/Magisk-v30.0.apk"
+          if magisk_apk == "30.2":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v30.2/Magisk-v30.2.apk"
+          if magisk_apk == "30.6":
+              magisk_apk = "https://github.com/topjohnwu/Magisk/releases/download/v30.0/Magisk-v30.6.apk"
           if magisk_apk == "canary":
               magisk_apk = "https://raw.githubusercontent.com/topjohnwu/magisk-files/canary/app-debug.apk"
           if magisk_apk == "delta":
